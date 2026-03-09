@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>सुजीत साइबर कैफ़े डिजिटल सेवा — Patna, Bihar</title>
+<meta name="description" content="Bihar का #1 Digital Seva Center. सरकारी सर्टिफिकेट, आधार, पैन कार्ड, ड्राइविंग लाइसेंस, स्कॉलरशिप, बिल भुगतान — 180+ सेवाएं।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root {
+  --saffron:#FF6B00; --saffron2:#FF8C38; --saffron3:#CC5200;
+  --gold:#FFD700; --gold2:#FFF0A0;
+  --navy:#0A1628; --navy2:#142240; --navy3:#1E3357;
+  --green:#138808; --wa:#25D366; --wa2:#128C7E;
+  --bg:#F7F9FC; --white:#fff;
+  --t1:#0A1628; --t2:#334466; --t3:#6B7A99;
+  --border:#E4EAF4;
+  --r:14px; --r2:10px;
+  --sh1:0 4px 20px rgba(10,22,40,.07);
+  --sh2:0 8px 32px rgba(10,22,40,.12);
+  --sh3:0 2px 8px rgba(255,107,0,.18);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans Devanagari','Baloo 2',sans-serif;background:var(--bg);color:var(--t1);overflow-x:hidden}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-thumb{background:var(--saffron);border-radius:3px}
+img{max-width:100%}
+a{text-decoration:none;color:inherit}
+
+/* ─── NAVBAR ─── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:900;background:var(--navy);border-bottom:2.5px solid var(--saffron);box-shadow:0 4px 24px rgba(0,0,0,.25)}
+.nav-wrap{max-width:1400px;margin:0 auto;padding:0 20px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo-box{width:42px;height:42px;border-radius:11px;background:linear-gradient(135deg,var(--saffron),var(--gold));display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;box-shadow:0 4px 12px rgba(255,107,0,.35)}
+.nav-logo-txt .n1{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:16px;color:var(--gold);line-height:1.15}
+.nav-logo-txt .n2{font-size:10px;color:rgba(255,255,255,.5);letter-spacing:.4px}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{color:rgba(255,255,255,.75);font-family:'Rajdhani',sans-serif;font-size:13.5px;font-weight:600;padding:7px 13px;border-radius:8px;transition:.2s;letter-spacing:.3px}
+.nav-links a:hover{background:rgba(255,107,0,.18);color:var(--gold)}
+.nav-wa{background:linear-gradient(135deg,var(--wa),var(--wa2))!important;color:#fff!important;box-shadow:0 3px 10px rgba(37,211,102,.3)}
+.nav-wa:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(37,211,102,.4)!important}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;border:none;background:none}
+.burger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:.3s}
+
+/* ─── MOBILE NAV ─── */
+.mob-nav{display:none;position:fixed;inset:0;z-index:850;background:var(--navy);padding:80px 20px 24px;flex-direction:column;gap:8px;overflow-y:auto}
+.mob-nav.open{display:flex}
+.mob-nav a{color:#fff;font-size:17px;font-weight:700;font-family:'Baloo 2',sans-serif;padding:13px 18px;border-radius:12px;border:1px solid rgba(255,255,255,.1);transition:.2s}
+.mob-nav a:hover{background:rgba(255,107,0,.2);border-color:var(--saffron)}
+.mob-close{position:absolute;top:18px;right:18px;width:38px;height:38px;background:rgba(255,255,255,.1);border:none;border-radius:9px;color:#fff;font-size:18px;cursor:pointer}
+.mob-wa{background:linear-gradient(135deg,var(--wa),var(--wa2))!important;border-color:var(--wa)!important}
+
+/* ─── HERO ─── */
+.hero{min-height:100vh;padding-top:64px;background:linear-gradient(155deg,var(--navy) 0%,var(--navy2) 50%,#1a2f50 100%);position:relative;overflow:hidden;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;pointer-events:none}
+.hero-bg::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 75% 50%,rgba(255,107,0,.07),transparent),radial-gradient(ellipse 50% 40% at 20% 20%,rgba(255,215,0,.05),transparent)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,107,0,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,107,0,.04) 1px,transparent 1px);background-size:50px 50px}
+.hero-wrap{max-width:1400px;margin:0 auto;padding:56px 24px;position:relative;z-index:2;display:grid;grid-template-columns:1fr 420px;gap:48px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,107,0,.14);border:1px solid rgba(255,107,0,.28);padding:5px 14px;border-radius:50px;color:var(--saffron2);font-size:11.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:18px}
+.hero-badge .dot{width:7px;height:7px;background:var(--saffron2);border-radius:50%;animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.4)}}
+.hero-h1{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:clamp(26px,3.8vw,52px);color:#fff;line-height:1.15;margin-bottom:14px}
+.hero-h1 .hl{background:linear-gradient(135deg,var(--saffron),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{font-size:clamp(13px,1.5vw,17px);color:rgba(255,255,255,.6);line-height:1.75;margin-bottom:30px;max-width:520px}
+.hero-stats{display:flex;gap:24px;margin-bottom:32px;flex-wrap:wrap}
+.h-stat .num{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:30px;color:var(--gold);display:block}
+.h-stat .lbl{font-size:11px;color:rgba(255,255,255,.45);letter-spacing:.5px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:12px;font-size:14.5px;font-weight:700;font-family:'Baloo 2',sans-serif;cursor:pointer;border:none;transition:.3s}
+.btn-orange{background:linear-gradient(135deg,var(--saffron),var(--saffron3));color:#fff;box-shadow:0 6px 20px rgba(255,107,0,.3)}
+.btn-orange:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(255,107,0,.42)}
+.btn-green{background:linear-gradient(135deg,var(--wa),var(--wa2));color:#fff;box-shadow:0 6px 20px rgba(37,211,102,.25)}
+.btn-green:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(37,211,102,.38)}
+
+/* Hero Visual */
+.hero-visual{position:relative;display:flex;align-items:center;justify-content:center}
+.hv-ring{width:300px;height:300px;border-radius:50%;border:1.5px solid rgba(255,107,0,.2);display:flex;align-items:center;justify-content:center;animation:spin 28s linear infinite;position:relative}
+.hv-ring2{width:220px;height:220px;border-radius:50%;border:2px solid rgba(255,215,0,.18);background:rgba(255,107,0,.06);display:flex;align-items:center;justify-content:center;animation:spin 28s linear infinite reverse}
+.hv-center{width:110px;height:110px;border-radius:50%;background:linear-gradient(135deg,var(--saffron),var(--gold));display:flex;align-items:center;justify-content:center;font-size:46px;box-shadow:0 0 56px rgba(255,107,0,.45);animation:spin 28s linear infinite}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.hv-dot{position:absolute;width:46px;height:46px;border-radius:11px;background:var(--navy2);border:1px solid rgba(255,107,0,.25);display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.hv-dot:nth-child(1){top:8px;right:20px;animation:fl 3s ease-in-out infinite}
+.hv-dot:nth-child(2){bottom:8px;left:20px;animation:fl 3s ease-in-out infinite .8s}
+.hv-dot:nth-child(3){top:50%;right:-8px;transform:translateY(-50%);animation:fl 3s ease-in-out infinite .4s}
+.hv-dot:nth-child(4){top:50%;left:-8px;transform:translateY(-50%);animation:fl 3s ease-in-out infinite 1.2s}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.hv-dot:nth-child(3),.hv-dot:nth-child(4){transform:translateY(-50%)!important;animation:none}
+
+/* ─── TICKER ─── */
+.ticker{background:linear-gradient(90deg,var(--saffron),var(--saffron3));padding:9px 0;overflow:hidden}
+.ticker-inner{display:flex;animation:tick 35s linear infinite;white-space:nowrap}
+@keyframes tick{from{transform:translateX(100vw)}to{transform:translateX(-100%)}}
+.ti{font-family:'Rajdhani',sans-serif;font-weight:600;font-size:13.5px;color:#fff;padding:0 28px;display:inline-flex;align-items:center;gap:8px}
+.ti::before{content:'◆';font-size:7px;opacity:.6}
+
+/* ─── COUNTER BAR ─── */
+.cbar{background:linear-gradient(135deg,var(--saffron),var(--saffron3));padding:40px 24px}
+.cbar-wrap{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:center}
+.cb-num{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:38px;color:#fff;display:block;text-shadow:0 2px 8px rgba(0,0,0,.15)}
+.cb-lbl{font-size:13px;color:rgba(255,255,255,.8);font-weight:600}
+
+/* ─── SECTION ─── */
+.sec{padding:72px 24px}
+.sec-inner{max-width:1400px;margin:0 auto}
+.sec-hd{text-align:center;margin-bottom:52px}
+.sec-tag{display:inline-block;background:rgba(255,107,0,.1);color:var(--saffron);font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;padding:5px 16px;border-radius:50px;margin-bottom:12px;border:1px solid rgba(255,107,0,.2)}
+.sec-title{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:clamp(22px,3.2vw,40px);color:var(--t1);line-height:1.2;margin-bottom:12px}
+.sec-title .ac{color:var(--saffron)}
+.sec-desc{color:var(--t3);font-size:15px;max-width:580px;margin:0 auto;line-height:1.75}
+
+/* ─── SEARCH ─── */
+.srch-box{max-width:580px;margin:0 auto 44px;position:relative}
+.srch-inp{width:100%;padding:15px 52px 15px 20px;border:2px solid var(--border);border-radius:14px;font-size:14.5px;font-family:'Noto Sans Devanagari',sans-serif;outline:none;transition:.25s;background:#fff;color:var(--t1);box-shadow:var(--sh1)}
+.srch-inp:focus{border-color:var(--saffron);box-shadow:0 4px 20px rgba(255,107,0,.13)}
+.srch-ico{position:absolute;right:7px;top:50%;transform:translateY(-50%);background:var(--saffron);color:#fff;border:none;width:40px;height:40px;border-radius:10px;cursor:pointer;font-size:15px;transition:.2s}
+.srch-ico:hover{background:var(--saffron3)}
+
+/* ─── CAT TABS ─── */
+.cat-wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:40px}
+.ct{padding:8px 17px;border-radius:50px;border:1.5px solid var(--border);background:#fff;color:var(--t2);font-size:12.5px;font-weight:600;cursor:pointer;transition:.22s;font-family:'Rajdhani',sans-serif;letter-spacing:.3px;display:flex;align-items:center;gap:5px;white-space:nowrap}
+.ct:hover,.ct.on{background:var(--saffron);color:#fff;border-color:var(--saffron);box-shadow:0 4px 14px rgba(255,107,0,.28);transform:translateY(-1px)}
+
+/* ─── SERVICE GRID ─── */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:14px}
+.sc{background:#fff;border-radius:var(--r);padding:20px 14px;cursor:pointer;border:1.5px solid var(--border);transition:.28s cubic-bezier(.34,1.56,.64,1);position:relative;overflow:hidden;box-shadow:var(--sh1);display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px}
+.sc::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--saffron),var(--gold));transform:scaleX(0);transition:.3s;transform-origin:left}
+.sc:hover{transform:translateY(-5px);box-shadow:0 10px 32px rgba(255,107,0,.14);border-color:rgba(255,107,0,.22)}
+.sc:hover::after{transform:scaleX(1)}
+.sc-ico{width:52px;height:52px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:22px;transition:.3s;flex-shrink:0}
+.sc:hover .sc-ico{transform:scale(1.1) rotate(-4deg)}
+.sc-name{font-size:12.5px;font-weight:600;color:var(--t1);line-height:1.4}
+.sc .bdg{position:absolute;top:8px;right:8px;font-size:9px;font-weight:700;padding:2px 7px;border-radius:50px;letter-spacing:.4px}
+.bdg-pop{background:#e8faf0;color:#14855a}
+.bdg-hot{background:#fff0e6;color:#cc4400}
+.bdg-new{background:#e8f0ff;color:#2244bb}
+.bdg-free{background:#f0f9ff;color:#0066aa}
+.bdg-imp{background:#fff8e6;color:#996600}
+.bdg-fast{background:#f0fff4;color:#138808}
+
+/* cat icon colors */
+.c-govt .sc-ico{background:rgba(255,107,0,.1);color:var(--saffron)}
+.c-id .sc-ico{background:rgba(20,100,200,.1);color:#1464C8}
+.c-vehicle .sc-ico{background:rgba(100,60,180,.1);color:#643CB4}
+.c-agri .sc-ico{background:rgba(19,136,8,.1);color:var(--green)}
+.c-banking .sc-ico{background:rgba(255,180,0,.12);color:#b87800}
+.c-mobile .sc-ico{background:rgba(0,150,200,.1);color:#0096C8}
+.c-edu .sc-ico{background:rgba(180,20,120,.1);color:#B41478}
+.c-health .sc-ico{background:rgba(220,50,50,.1);color:#DC3232}
+.c-social .sc-ico{background:rgba(255,107,0,.09);color:var(--saffron)}
+.c-land .sc-ico{background:rgba(100,140,60,.1);color:#648C3C}
+.c-jobs .sc-ico{background:rgba(120,40,200,.1);color:#7828C8}
+.c-travel .sc-ico{background:rgba(0,120,200,.1);color:#0078C8}
+.c-digital .sc-ico{background:rgba(60,100,200,.1);color:#3C64C8}
+.c-business .sc-ico{background:rgba(20,130,90,.1);color:#14825A}
+.c-other .sc-ico{background:rgba(80,80,80,.08);color:#505050}
+
+/* empty */
+.empty{grid-column:1/-1;text-align:center;padding:56px 20px;color:var(--t3);font-size:15px}
+.empty .ei{font-size:44px;margin-bottom:12px;display:block}
+
+/* ─── WHY ─── */
+.why-sec{background:linear-gradient(155deg,var(--navy),var(--navy2))}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
+.wc{background:rgba(255,255,255,.05);border-radius:var(--r);padding:28px 22px;text-align:center;border:1px solid rgba(255,255,255,.08);transition:.3s}
+.wc:hover{background:rgba(255,107,0,.1);border-color:rgba(255,107,0,.28);transform:translateY(-4px)}
+.wc-ico{width:60px;height:60px;border-radius:16px;margin:0 auto 16px;background:linear-gradient(135deg,var(--saffron),var(--gold));display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 6px 18px rgba(255,107,0,.28)}
+.wc-title{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:16px;color:#fff;margin-bottom:7px}
+.wc-desc{font-size:13px;color:rgba(255,255,255,.5);line-height:1.7}
+
+/* ─── CONTACT ─── */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.ci-title{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:30px;color:var(--t1);margin-bottom:22px;line-height:1.25}
+.ci-item{display:flex;align-items:flex-start;gap:14px;padding:16px;background:#fff;border-radius:var(--r2);border:1.5px solid var(--border);box-shadow:var(--sh1);margin-bottom:14px;transition:.2s}
+.ci-item:hover{border-color:rgba(255,107,0,.25);box-shadow:var(--sh3)}
+.ci-ico{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.ic-org{background:rgba(255,107,0,.1);color:var(--saffron)}
+.ic-grn{background:rgba(37,211,102,.1);color:var(--wa)}
+.ic-blu{background:rgba(20,100,200,.1);color:#1464C8}
+.ci-lbl{font-size:10.5px;color:var(--t3);font-weight:700;text-transform:uppercase;letter-spacing:.7px;margin-bottom:3px}
+.ci-val{font-size:14.5px;font-weight:600;color:var(--t1)}
+.ci-val a{color:var(--saffron)}
+
+.frm{background:#fff;border-radius:var(--r);padding:32px;box-shadow:var(--sh2);border:1.5px solid var(--border)}
+.frm h3{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:20px;color:var(--t1);margin-bottom:22px}
+.fg{margin-bottom:16px}
+.fg label{display:block;font-size:12.5px;font-weight:700;color:var(--t2);margin-bottom:6px}
+.fg input,.fg select,.fg textarea{width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:13.5px;font-family:'Noto Sans Devanagari',sans-serif;outline:none;transition:.2s;color:var(--t1);background:#fff}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--saffron)}
+.fg textarea{resize:vertical;min-height:84px}
+.fg select option[disabled]{color:#aaa}
+.fsub{width:100%;padding:13px;background:linear-gradient(135deg,var(--saffron),var(--saffron3));color:#fff;border:none;border-radius:12px;font-size:15px;font-weight:700;font-family:'Baloo 2',sans-serif;cursor:pointer;transition:.3s;box-shadow:0 6px 18px rgba(255,107,0,.28)}
+.fsub:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(255,107,0,.38)}
+.fsub:disabled{opacity:.65;cursor:not-allowed;transform:none}
+.f-ok{display:none;text-align:center;padding:14px;color:var(--green);font-weight:700;font-size:14px;background:#e8faf0;border-radius:10px;margin-top:12px}
+
+/* ─── FOOTER ─── */
+footer{background:linear-gradient(135deg,#06101e,var(--navy));color:rgba(255,255,255,.65);padding:56px 24px 0;border-top:2.5px solid var(--saffron)}
+.ft-wrap{max-width:1400px;margin:0 auto}
+.ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:44px;margin-bottom:36px}
+.ft-brand .lg{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:18px;color:var(--gold);margin-bottom:12px}
+.ft-brand p{font-size:13px;line-height:1.8;max-width:260px}
+.ft-col h4{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:14px;color:#fff;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,.1)}
+.ft-col ul{list-style:none}
+.ft-col li{margin-bottom:9px}
+.ft-col a{color:rgba(255,255,255,.5);font-size:13px;transition:.2s}
+.ft-col a:hover{color:var(--saffron2)}
+.ft-bot{border-top:1px solid rgba(255,255,255,.09);padding:18px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px}
+.flag{display:flex;align-items:center;gap:7px;color:rgba(255,255,255,.35)}
+.flag-img{display:flex;flex-direction:column;width:26px;height:17px;border-radius:2px;overflow:hidden}
+.flag-img span{flex:1}
+.flag-img span:nth-child(1){background:#FF9933}
+.flag-img span:nth-child(2){background:#fff}
+.flag-img span:nth-child(3){background:#138808}
+
+/* ─── WHATSAPP FLOAT ─── */
+.wa-btn{position:fixed;bottom:24px;right:24px;z-index:800;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--wa),var(--wa2));display:flex;align-items:center;justify-content:center;font-size:26px;color:#fff;box-shadow:0 6px 24px rgba(37,211,102,.45);animation:pulse-wa 3s ease-in-out infinite;transition:.3s}
+.wa-btn:hover{transform:scale(1.14);box-shadow:0 10px 32px rgba(37,211,102,.55)}
+@keyframes pulse-wa{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.wa-tip{position:fixed;bottom:34px;right:92px;z-index:799;background:var(--navy);color:#fff;padding:7px 14px;border-radius:9px;font-size:12.5px;font-weight:600;white-space:nowrap;box-shadow:0 4px 14px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:opacity .3s}
+.wa-btn:hover~.wa-tip{opacity:1}
+.wa-tip::after{content:'';position:absolute;right:-7px;top:50%;transform:translateY(-50%);border:5px solid transparent;border-left-color:var(--navy)}
+
+/* ─── SERVICE MODAL ─── */
+.modal-ov{display:none;position:fixed;inset:0;z-index:9000;background:rgba(10,22,40,.82);backdrop-filter:blur(5px);align-items:center;justify-content:center;padding:20px}
+.modal-ov.open{display:flex}
+.modal-box{background:#fff;border-radius:20px;padding:34px;max-width:460px;width:100%;box-shadow:0 24px 72px rgba(0,0,0,.3);animation:mIn .3s cubic-bezier(.34,1.56,.64,1)}
+@keyframes mIn{from{opacity:0;transform:scale(.88)}to{opacity:1;transform:scale(1)}}
+.mhd{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+.mhd h3{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:20px;color:var(--t1)}
+.mcls{width:34px;height:34px;border:none;background:#f0f4f8;border-radius:8px;cursor:pointer;font-size:16px;color:var(--t2);transition:.2s}
+.mcls:hover{background:#fde8d8;color:var(--saffron)}
+.m-ico{font-size:52px;text-align:center;margin-bottom:14px;display:block}
+.m-desc{text-align:center;color:var(--t2);font-size:14.5px;line-height:1.75;margin-bottom:6px}
+.m-meta{text-align:center;font-size:12.5px;color:var(--t3);margin-bottom:4px}
+.m-wa{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:14px;background:linear-gradient(135deg,var(--wa),var(--wa2));color:#fff;border:none;border-radius:12px;font-size:15px;font-weight:700;font-family:'Baloo 2',sans-serif;cursor:pointer;transition:.3s;box-shadow:0 6px 18px rgba(37,211,102,.28);margin-top:16px;text-decoration:none}
+.m-wa:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(37,211,102,.4)}
+
+/* ─── TOAST ─── */
+.toast{position:fixed;bottom:100px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#fff;padding:12px 22px;border-radius:12px;font-size:13.5px;font-weight:600;box-shadow:0 8px 28px rgba(0,0,0,.3);z-index:9999;opacity:0;transition:.35s;pointer-events:none;white-space:nowrap}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:1100px){.hero-wrap{grid-template-columns:1fr}.hero-visual{display:none}.hero-sub{margin:0 0 30px}.hero-stats{justify-content:flex-start}.ft-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr}.svc-grid{grid-template-columns:repeat(auto-fill,minmax(155px,1fr))}}
+@media(max-width:768px){.nav-links{display:none}.burger{display:flex}.cbar-wrap{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:repeat(2,1fr)}.svc-grid{grid-template-columns:repeat(3,1fr);gap:11px}}
+@media(max-width:580px){.svc-grid{grid-template-columns:repeat(2,1fr);gap:10px}.sc{padding:14px 10px;gap:8px}.sc-ico{width:44px;height:44px;font-size:19px;border-radius:11px}.sc-name{font-size:12px}.ct{font-size:11.5px;padding:6px 11px}.hero-btns{flex-direction:column}.hero-btns .btn{justify-content:center}.sec{padding:52px 16px}.frm{padding:22px 16px}}
+@media(max-width:480px){.ft-grid{grid-template-columns:1fr}.cbar-wrap{grid-template-columns:repeat(2,1fr)}.ft-bot{flex-direction:column;text-align:center}.hero-h1{font-size:24px}.hero-wrap{padding:44px 16px}}
+@media(max-width:360px){.svc-grid{grid-template-columns:repeat(2,1fr);gap:8px}.sc-name{font-size:11px}.sc-ico{width:38px;height:38px;font-size:16px}}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="nav-wrap">
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-box">🖥️</div>
+      <div class="nav-logo-txt">
+        <div class="n1">सुजीत साइबर कैफ़े</div>
+        <div class="n2">डिजिटल सेवा केंद्र • Patna</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#services">सेवाएं</a>
+      <a href="#about">हमारे बारे में</a>
+      <a href="#contact">संपर्क</a>
+      <a href="https://wa.me/919471892125" target="_blank" class="nav-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+    <button class="burger" id="burgerBtn" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mobNav">
+  <button class="mob-close" onclick="toggleNav()">✕</button>
+  <a href="#services" onclick="toggleNav()">🗂️ सेवाएं</a>
+  <a href="#about" onclick="toggleNav()">ℹ️ हमारे बारे में</a>
+  <a href="#contact" onclick="toggleNav()">📞 संपर्क</a>
+  <a href="https://wa.me/919471892125?text=नमस्ते! सेवा चाहिए।" target="_blank" class="mob-wa"><i class="fab fa-whatsapp"></i> WhatsApp पर संपर्क</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"><div class="hero-grid"></div></div>
+  <div class="hero-wrap">
+    <div>
+      <div class="hero-badge"><span class="dot"></span>Bihar का #1 Digital Seva Center</div>
+      <h1 class="hero-h1">सभी <span class="hl">सरकारी सेवाएं</span><br>एक ही जगह पर</h1>
+      <p class="hero-sub">सर्टिफिकेट, आधार, पैन कार्ड, ड्राइविंग लाइसेंस, स्कॉलरशिप, बिल भुगतान और 180+ अन्य सेवाएं — तुरंत और भरोसेमंद।</p>
+      <div class="hero-stats">
+        <div class="h-stat"><span class="num" id="hc1">0</span><span class="lbl">Services</span></div>
+        <div class="h-stat"><span class="num" id="hc2">0</span><span class="lbl">Customers</span></div>
+        <div class="h-stat"><span class="num" id="hc3">0</span><span class="lbl">Years</span></div>
+      </div>
+      <div class="hero-btns">
+        <a href="#services" class="btn btn-orange"><i class="fas fa-th-large"></i> सेवाएं देखें</a>
+        <a href="https://wa.me/919471892125?text=नमस्ते! सेवा चाहिए।" target="_blank" class="btn btn-green"><i class="fab fa-whatsapp"></i> WhatsApp करें</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hv-ring">
+        <div class="hv-ring2"><div class="hv-center">🖥️</div></div>
+      </div>
+      <div class="hv-dot">🏛️</div>
+      <div class="hv-dot">🪪</div>
+      <div class="hv-dot" style="top:50%;right:-8px;transform:translateY(-50%)">🎓</div>
+      <div class="hv-dot" style="top:50%;left:-8px;transform:translateY(-50%)">🏦</div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker"><div class="ticker-inner" id="tickerEl">
+  <span class="ti">🏛️ सरकारी सर्टिफिकेट</span><span class="ti">🪪 आधार कार्ड सेवाएं</span>
+  <span class="ti">🚗 ड्राइविंग लाइसेंस</span><span class="ti">🎓 छात्रवृत्ति आवेदन</span>
+  <span class="ti">🏦 बैंकिंग सेवाएं</span><span class="ti">📱 मोबाइल रिचार्ज</span>
+  <span class="ti">🏥 स्वास्थ्य सेवाएं</span><span class="ti">🌾 किसान पंजीकरण</span>
+  <span class="ti">🏠 भूमि रिकॉर्ड</span><span class="ti">✈️ ट्रेन टिकट</span>
+  <span class="ti">💼 Jobs Form</span><span class="ti">🖨️ Print & Scan</span>
+  <span class="ti">📊 GST Registration</span><span class="ti">👷 eShram Card</span>
+  <span class="ti">🏛️ सरकारी सर्टिफिकेट</span><span class="ti">🪪 आधार कार्ड सेवाएं</span>
+</div></div>
+
+<!-- COUNTER BAR -->
+<div class="cbar">
+  <div class="cbar-wrap">
+    <div><span class="cb-num">180+</span><span class="cb-lbl">डिजिटल सेवाएं</span></div>
+    <div><span class="cb-num">10,000+</span><span class="cb-lbl">संतुष्ट ग्राहक</span></div>
+    <div><span class="cb-num">5+</span><span class="cb-lbl">वर्षों का अनुभव</span></div>
+    <div><span class="cb-num">99%</span><span class="cb-lbl">सफलता दर</span></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="sec" id="services">
+  <div class="sec-inner">
+    <div class="sec-hd">
+      <div class="sec-tag">हमारी सेवाएं</div>
+      <h2 class="sec-title">180+ <span class="ac">डिजिटल सेवाएं</span> उपलब्ध</h2>
+      <p class="sec-desc">सरकारी से लेकर बैंकिंग, नौकरी फ़ॉर्म से लेकर यात्रा — सभी सेवाएं एक ही छत के नीचे</p>
+    </div>
+
+    <div class="srch-box">
+      <input class="srch-inp" id="srchInp" type="text" placeholder="🔍 सेवा खोजें... जैसे: आधार, पैन, ड्राइविंग लाइसेंस" oninput="filterSvc(this.value)">
+      <button class="srch-ico"><i class="fas fa-search"></i></button>
+    </div>
+
+    <div class="cat-wrap" id="catWrap">
+      <button class="ct on" data-cat="all">🗂️ सभी</button>
+      <button class="ct" data-cat="govt">🏛️ Government</button>
+      <button class="ct" data-cat="id">🪪 Identity</button>
+      <button class="ct" data-cat="vehicle">🚗 Vehicle</button>
+      <button class="ct" data-cat="agri">🌾 Agriculture</button>
+      <button class="ct" data-cat="banking">🏦 Banking</button>
+      <button class="ct" data-cat="mobile">📱 Utility</button>
+      <button class="ct" data-cat="edu">🎓 Education</button>
+      <button class="ct" data-cat="health">🏥 Health</button>
+      <button class="ct" data-cat="social">👨‍👩‍👧 Social</button>
+      <button class="ct" data-cat="land">🏠 Land</button>
+      <button class="ct" data-cat="jobs">💼 Jobs Form</button>
+      <button class="ct" data-cat="travel">✈️ Travel</button>
+      <button class="ct" data-cat="digital">🖨️ Digital</button>
+      <button class="ct" data-cat="business">📊 Business</button>
+      <button class="ct" data-cat="other">📦 Other</button>
+    </div>
+
+    <div class="svc-grid" id="svcGrid"></div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="sec why-sec" id="about">
+  <div class="sec-inner">
+    <div class="sec-hd">
+      <div class="sec-tag" style="background:rgba(255,215,0,.1);color:var(--gold);border-color:rgba(255,215,0,.2)">हमें क्यों चुनें</div>
+      <h2 class="sec-title" style="color:#fff">विश्वसनीय <span style="color:var(--gold)">डिजिटल सेवा</span> केंद्र</h2>
+      <p class="sec-desc" style="color:rgba(255,255,255,.5)">हम सिर्फ काम नहीं करते — आपकी समस्या का पूरा समाधान देते हैं</p>
+    </div>
+    <div class="why-grid">
+      <div class="wc"><div class="wc-ico">⚡</div><div class="wc-title">तुरंत सेवा</div><div class="wc-desc">सभी काम तेज़ और समय पर। आपका समय हमारे लिए अमूल्य है।</div></div>
+      <div class="wc"><div class="wc-ico">🔒</div><div class="wc-title">100% सुरक्षित</div><div class="wc-desc">आपके दस्तावेज़ और डेटा पूरी तरह सुरक्षित रहते हैं।</div></div>
+      <div class="wc"><div class="wc-ico">💰</div><div class="wc-title">उचित मूल्य</div><div class="wc-desc">सस्ती दरों पर premium quality सेवा। कोई छुपा शुल्क नहीं।</div></div>
+      <div class="wc"><div class="wc-ico">🎯</div><div class="wc-title">Expert टीम</div><div class="wc-desc">अनुभवी और प्रशिक्षित कर्मचारी हर समस्या का हल देते हैं।</div></div>
+      <div class="wc"><div class="wc-ico">📞</div><div class="wc-title">24/7 सपोर्ट</div><div class="wc-desc">WhatsApp पर कभी भी संपर्क करें। हम हमेशा तैयार हैं।</div></div>
+      <div class="wc"><div class="wc-ico">🏆</div><div class="wc-title">5+ साल अनुभव</div><div class="wc-desc">Bihar में हज़ारों ग्राहकों का विश्वास अर्जित किया है।</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec" id="contact" style="background:#fff">
+  <div class="sec-inner">
+    <div class="sec-hd">
+      <div class="sec-tag">संपर्क करें</div>
+      <h2 class="sec-title">हमसे <span class="ac">बात करें</span></h2>
+      <p class="sec-desc">किसी भी सेवा के लिए WhatsApp या फ़ॉर्म के ज़रिए संपर्क करें</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="ci-title">सुजीत साइबर कैफ़े<br>डिजिटल सेवा</div>
+        <div class="ci-item"><div class="ci-ico ic-org"><i class="fas fa-map-marker-alt"></i></div><div><div class="ci-lbl">पता</div><div class="ci-val">Patna, Bihar, India</div></div></div>
+        <div class="ci-item"><div class="ci-ico ic-grn"><i class="fab fa-whatsapp"></i></div><div><div class="ci-lbl">WhatsApp</div><div class="ci-val"><a href="https://wa.me/919471892125" target="_blank">WhatsApp पर संपर्क करें →</a></div></div></div>
+        <div class="ci-item"><div class="ci-ico ic-blu"><i class="fas fa-envelope"></i></div><div><div class="ci-lbl">Email</div><div class="ci-val">subodhkumarpkd@gmail.com</div></div></div>
+        <div class="ci-item"><div class="ci-ico ic-org"><i class="fas fa-clock"></i></div><div><div class="ci-lbl">समय</div><div class="ci-val">सुबह 8 बजे – रात 9 बजे (सोम–शनि)</div></div></div>
+        <a href="https://wa.me/919471892125?text=नमस्ते! सेवा चाहिए।" target="_blank" class="btn btn-green" style="margin-top:10px;display:inline-flex"><i class="fab fa-whatsapp"></i> WhatsApp पर संदेश भेजें</a>
+      </div>
+      <div class="frm">
+        <h3>📋 सेवा अनुरोध करें</h3>
+        <div class="fg"><label>आपका नाम *</label><input type="text" id="fn" placeholder="पूरा नाम लिखें"></div>
+        <div class="fg"><label>मोबाइल नंबर *</label><input type="tel" id="fp" placeholder="10 अंकों का मोबाइल नंबर"></div>
+        <div class="fg"><label>सेवा चुनें *</label>
+          <select id="fs">
+            <option value="" disabled selected>-- सेवा चुनें --</option>
+            <optgroup label="🏛️ Government Certificate">
+              <option>जाति प्रमाण पत्र</option><option>आय प्रमाण पत्र</option><option>निवास प्रमाण पत्र</option><option>OBC प्रमाण पत्र</option><option>EWS प्रमाण पत्र</option><option>SC/ST Certificate</option><option>Non Creamy Layer Certificate</option><option>Police Verification Certificate</option><option>Bonafide Certificate</option>
+            </optgroup>
+            <optgroup label="🪪 Identity Card">
+              <option>Aadhaar Card Update</option><option>PVC Aadhaar Card Order</option><option>PAN Card Apply</option><option>Voter ID Card Apply</option><option>Ayushman Card Apply</option><option>ABHA Health Card</option>
+            </optgroup>
+            <optgroup label="🚗 Vehicle">
+              <option>Driving License Apply</option><option>Learning License Apply</option><option>DL Renewal</option><option>Challan Payment</option><option>Vehicle Insurance Renew</option>
+            </optgroup>
+            <optgroup label="🏦 Banking">
+              <option>Money Transfer</option><option>AEPS Cash Withdrawal</option><option>Account Opening</option><option>Personal Loan Apply</option>
+            </optgroup>
+            <optgroup label="🎓 Education">
+              <option>Scholarship Apply</option><option>Bihar Board Form Fill</option><option>Admit Card Download</option><option>Result Check</option><option>Student Credit Card Scheme</option>
+            </optgroup>
+            <optgroup label="👨‍👩‍👧 Social Welfare">
+              <option>Old Age Pension Apply</option><option>Labour Card Registration</option><option>Ration Card Apply</option><option>PM Awas Yojana Apply</option><option>eShram Card Apply</option>
+            </optgroup>
+            <optgroup label="💼 Jobs Form">
+              <option>Government Job Form Fill</option><option>Railway Job Form</option><option>SSC Job Form</option><option>Police Job Form</option><option>Army Job Form</option>
+            </optgroup>
+            <optgroup label="✈️ Travel">
+              <option>Train Ticket Booking</option><option>Flight Ticket Booking</option><option>Passport Apply</option><option>Tatkal Ticket Booking</option>
+            </optgroup>
+            <optgroup label="🖨️ Digital & Print">
+              <option>Color Printout</option><option>Document Scanning</option><option>Passport Size Photo</option><option>Resume / CV Creation</option>
+            </optgroup>
+            <optgroup label="📦 Other">
+              <option>GST Registration</option><option>DigiLocker Registration</option><option>FIR Online Apply</option><option>Graphic Design Service</option><option>अन्य सेवा</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="fg"><label>संदेश</label><textarea id="fm" placeholder="अपनी समस्या विस्तार से लिखें..."></textarea></div>
+        <button class="fsub" id="fsubBtn" onclick="submitForm()"><i class="fas fa-paper-plane"></i> अनुरोध भेजें</button>
+        <div class="f-ok" id="fOk">✅ अनुरोध भेज दिया गया! हम जल्द संपर्क करेंगे।</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-wrap">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <div class="lg">🖥️ सुजीत साइबर कैफ़े</div>
+        <p>Bihar का भरोसेमंद डिजिटल सेवा केंद्र। सरकारी सेवाओं से लेकर बैंकिंग तक — सब कुछ एक जगह।</p>
+        <div style="margin-top:18px"><a href="https://wa.me/919471892125" target="_blank" style="width:36px;height:36px;background:#25D366;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:16px"><i class="fab fa-whatsapp"></i></a></div>
+      </div>
+      <div class="ft-col"><h4>प्रमुख सेवाएं</h4><ul><li><a href="#">आधार कार्ड सेवा</a></li><li><a href="#">पैन कार्ड</a></li><li><a href="#">जाति प्रमाण पत्र</a></li><li><a href="#">ड्राइविंग लाइसेंस</a></li><li><a href="#">PM किसान</a></li><li><a href="#">छात्रवृत्ति</a></li></ul></div>
+      <div class="ft-col"><h4>Quick Links</h4><ul><li><a href="#services">सेवाएं</a></li><li><a href="#about">हमारे बारे में</a></li><li><a href="#contact">संपर्क</a></li><li><a href="admin.html" target="_blank">Admin Panel</a></li></ul></div>
+      <div class="ft-col"><h4>Govt Links</h4><ul><li><a href="https://uidai.gov.in" target="_blank">UIDAI</a></li><li><a href="https://parivahan.gov.in" target="_blank">Parivahan</a></li><li><a href="https://serviceonline.bihar.gov.in" target="_blank">Bihar Seva</a></li><li><a href="https://www.incometax.gov.in" target="_blank">Income Tax</a></li></ul></div>
+    </div>
+    <div class="ft-bot">
+      <div>© 2025 सुजीत साइबर कैफ़े डिजिटल सेवा। सर्वाधिकार सुरक्षित।</div>
+      <div class="flag"><div class="flag-img"><span></span><span></span><span></span></div>Made with ❤️ in India</div>
+    </div>
+  </div>
+</footer>
+
+<!-- WA FLOAT -->
+<a class="wa-btn" href="https://wa.me/919471892125?text=नमस्ते! सेवा चाहिए।" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<div class="wa-tip">WhatsApp पर संपर्क करें</div>
+
+<!-- MODAL -->
+<div class="modal-ov" id="modal">
+  <div class="modal-box">
+    <div class="mhd"><h3 id="mTitle">सेवा</h3><button class="mcls" onclick="closeModal()">✕</button></div>
+    <span class="m-ico" id="mIco">🏛️</span>
+    <p class="m-desc" id="mDesc"></p>
+    <p class="m-meta">📍 Patna, Bihar &nbsp;|&nbsp; 🕐 8 AM – 9 PM</p>
+    <a class="m-wa" id="mWa" href="#" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp पर अभी पूछें</a>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ═══════════════════════════════
+//  FIREBASE CONFIG
+// ═══════════════════════════════
+const FB = "https://sujeetcyber-19e28-default-rtdb.asia-southeast1.firebasedatabase.app";
+
+async function fbGet(p){try{const r=await fetch(FB+p+'.json');return r.ok?await r.json():null}catch{return null}}
+async function fbPost(p,d){try{const r=await fetch(FB+p+'.json',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});return r.ok?await r.json():null}catch{return null}}
+async function fbPut(p,d){try{const r=await fetch(FB+p+'.json',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});return r.ok}catch{return false}}
+function fbArr(obj){if(!obj)return[];return Object.entries(obj).map(([k,v])=>({...v,_k:k}))}
+
+// ═══════════════════════════════
+//  DEFAULT SERVICES (fallback)
+// ═══════════════════════════════
+const DEFAULT_SERVICES = [
+  // GOVT
+  {name:"जाति प्रमाण पत्र",icon:"📜",cat:"govt",badge:"pop"},
+  {name:"आय प्रमाण पत्र",icon:"💰",cat:"govt",badge:"pop"},
+  {name:"निवास प्रमाण पत्र",icon:"🏠",cat:"govt",badge:"pop"},
+  {name:"चरित्र प्रमाण पत्र",icon:"✅",cat:"govt"},
+  {name:"OBC प्रमाण पत्र",icon:"📋",cat:"govt",badge:"pop"},
+  {name:"EWS प्रमाण पत्र",icon:"📄",cat:"govt"},
+  {name:"डोमिसाइल प्रमाण पत्र",icon:"🏡",cat:"govt"},
+  {name:"Non Creamy Layer Certificate",icon:"📃",cat:"govt"},
+  {name:"Residential Proof Certificate",icon:"🏘️",cat:"govt"},
+  {name:"Minority Certificate",icon:"🕌",cat:"govt"},
+  {name:"SC/ST Certificate",icon:"📑",cat:"govt",badge:"pop"},
+  {name:"Local Resident Certificate",icon:"📍",cat:"govt"},
+  {name:"Police Verification Certificate",icon:"👮",cat:"govt"},
+  {name:"Bonafide Certificate",icon:"🎓",cat:"govt"},
+  {name:"Family Member Certificate",icon:"👨‍👩‍👧",cat:"govt"},
+  {name:"Rural Residence Certificate",icon:"🌾",cat:"govt"},
+  // ID
+  {name:"Aadhaar Card Update",icon:"🪪",cat:"id",badge:"hot"},
+  {name:"Aadhaar Mobile Number Update",icon:"📱",cat:"id"},
+  {name:"Aadhaar Address Update",icon:"📍",cat:"id"},
+  {name:"Aadhaar Name Correction",icon:"✏️",cat:"id"},
+  {name:"Aadhaar Date of Birth Update",icon:"📅",cat:"id"},
+  {name:"Aadhaar Print",icon:"🖨️",cat:"id"},
+  {name:"PVC Aadhaar Card Order",icon:"💳",cat:"id",badge:"new"},
+  {name:"PAN Card Apply",icon:"🔖",cat:"id",badge:"hot"},
+  {name:"PAN Card Correction",icon:"📝",cat:"id"},
+  {name:"Instant PAN Apply",icon:"⚡",cat:"id"},
+  {name:"Voter ID Card Apply",icon:"🗳️",cat:"id"},
+  {name:"Voter ID Correction",icon:"🔄",cat:"id"},
+  {name:"Voter ID Download",icon:"📥",cat:"id"},
+  {name:"Ayushman Card Apply",icon:"🏥",cat:"id",badge:"free"},
+  {name:"Ayushman Card Download",icon:"📲",cat:"id"},
+  {name:"Health ID Card Registration",icon:"💊",cat:"id"},
+  {name:"ABHA Health Card",icon:"❤️",cat:"id"},
+  // VEHICLE
+  {name:"Driving License Apply",icon:"🚗",cat:"vehicle",badge:"pop"},
+  {name:"Learning License Apply",icon:"📚",cat:"vehicle"},
+  {name:"Driving License Renewal",icon:"🔄",cat:"vehicle"},
+  {name:"Duplicate Driving License",icon:"📄",cat:"vehicle"},
+  {name:"DL Address Change",icon:"📍",cat:"vehicle"},
+  {name:"DL Name Correction",icon:"✏️",cat:"vehicle"},
+  {name:"International Driving Permit",icon:"🌍",cat:"vehicle"},
+  {name:"Vehicle RC Download",icon:"📥",cat:"vehicle"},
+  {name:"RC Transfer",icon:"🔀",cat:"vehicle"},
+  {name:"Vehicle Ownership Transfer",icon:"🤝",cat:"vehicle"},
+  {name:"Vehicle Permit Apply",icon:"📋",cat:"vehicle"},
+  {name:"Vehicle Insurance Renew",icon:"🛡️",cat:"vehicle"},
+  {name:"Challan Payment",icon:"💸",cat:"vehicle"},
+  {name:"Vehicle Registration Apply",icon:"🚙",cat:"vehicle"},
+  // AGRI
+  {name:"PM Kisan Registration",icon:"🌾",cat:"agri",badge:"free"},
+  {name:"Farmer Registration",icon:"👨‍🌾",cat:"agri"},
+  {name:"Agriculture Subsidy Apply",icon:"💰",cat:"agri"},
+  {name:"Animal Husbandry Scheme Apply",icon:"🐂",cat:"agri"},
+  {name:"Dairy Loan Apply",icon:"🐄",cat:"agri"},
+  {name:"Fishery Scheme Apply",icon:"🐟",cat:"agri"},
+  // BANKING
+  {name:"Money Transfer",icon:"💸",cat:"banking",badge:"fast"},
+  {name:"AEPS Cash Withdrawal",icon:"🏧",cat:"banking"},
+  {name:"AEPS Balance Check",icon:"💹",cat:"banking"},
+  {name:"Mini Statement",icon:"🧾",cat:"banking"},
+  {name:"Account Opening",icon:"🏦",cat:"banking"},
+  {name:"PAN to Aadhaar Link",icon:"🔗",cat:"banking"},
+  {name:"Life Insurance Apply",icon:"❤️",cat:"banking"},
+  {name:"General Insurance Apply",icon:"🛡️",cat:"banking"},
+  {name:"Loan Apply",icon:"💼",cat:"banking"},
+  {name:"Personal Loan Apply",icon:"👤",cat:"banking"},
+  {name:"Business Loan Apply",icon:"🏢",cat:"banking"},
+  {name:"Credit Card Apply",icon:"💳",cat:"banking"},
+  {name:"Pension Withdrawal",icon:"👴",cat:"banking"},
+  // MOBILE
+  {name:"Mobile Recharge",icon:"📱",cat:"mobile",badge:"fast"},
+  {name:"DTH Recharge",icon:"📺",cat:"mobile"},
+  {name:"Electricity Bill Payment",icon:"⚡",cat:"mobile",badge:"fast"},
+  {name:"Water Bill Payment",icon:"💧",cat:"mobile"},
+  {name:"Gas Booking",icon:"🔥",cat:"mobile"},
+  {name:"LPG Subsidy Check",icon:"🫙",cat:"mobile"},
+  {name:"FASTag Recharge",icon:"🚦",cat:"mobile"},
+  {name:"Broadband Bill Payment",icon:"🌐",cat:"mobile"},
+  {name:"Landline Bill Payment",icon:"☎️",cat:"mobile"},
+  {name:"Postpaid Bill Payment",icon:"📡",cat:"mobile"},
+  // EDU
+  {name:"Scholarship Apply",icon:"🎓",cat:"edu",badge:"imp"},
+  {name:"Scholarship Status Check",icon:"🔍",cat:"edu"},
+  {name:"Bihar Board Form Fill",icon:"📝",cat:"edu",badge:"imp"},
+  {name:"CBSE Form Fill",icon:"📋",cat:"edu"},
+  {name:"Online Admission Apply",icon:"🏫",cat:"edu"},
+  {name:"Exam Form Fill",icon:"📄",cat:"edu"},
+  {name:"Admit Card Download",icon:"📥",cat:"edu"},
+  {name:"Result Check",icon:"📊",cat:"edu"},
+  {name:"Migration Certificate Apply",icon:"📜",cat:"edu"},
+  {name:"Duplicate Marksheet Apply",icon:"🗂️",cat:"edu"},
+  {name:"Student Credit Card Scheme",icon:"💳",cat:"edu"},
+  {name:"University Admission Form",icon:"🎓",cat:"edu"},
+  // HEALTH
+  {name:"Ayushman Bharat Registration",icon:"🏥",cat:"health",badge:"free"},
+  {name:"Ayushman Card Print",icon:"🖨️",cat:"health"},
+  {name:"Health Insurance Apply",icon:"🛡️",cat:"health"},
+  {name:"COVID Certificate Download",icon:"💉",cat:"health"},
+  {name:"Hospital Registration",icon:"🏨",cat:"health"},
+  {name:"ABHA Health ID Create",icon:"🆔",cat:"health"},
+  {name:"Vaccination Certificate",icon:"💊",cat:"health"},
+  // SOCIAL
+  {name:"Old Age Pension Apply",icon:"👴",cat:"social",badge:"imp"},
+  {name:"Widow Pension Apply",icon:"👩",cat:"social"},
+  {name:"Disability Pension Apply",icon:"♿",cat:"social"},
+  {name:"Labour Card Registration",icon:"👷",cat:"social"},
+  {name:"Labour Card Renewal",icon:"🔄",cat:"social"},
+  {name:"Labour Card Correction",icon:"✏️",cat:"social"},
+  {name:"Ration Card Apply",icon:"🍚",cat:"social",badge:"imp"},
+  {name:"Ration Card Correction",icon:"📝",cat:"social"},
+  {name:"NFSA Ration Card Apply",icon:"🌾",cat:"social"},
+  {name:"Pension Status Check",icon:"🔍",cat:"social"},
+  // LAND
+  {name:"Land Record (Khatiyan) Download",icon:"📋",cat:"land",badge:"pop"},
+  {name:"Jamabandi Copy",icon:"📃",cat:"land"},
+  {name:"Mutation Apply",icon:"🔄",cat:"land"},
+  {name:"Land Map Download",icon:"🗺️",cat:"land"},
+  {name:"Property Registration",icon:"🏠",cat:"land"},
+  {name:"Land Tax Payment",icon:"💰",cat:"land"},
+  {name:"Encumbrance Certificate",icon:"📜",cat:"land"},
+  {name:"Plot Information Check",icon:"🔍",cat:"land"},
+  // JOBS
+  {name:"Government Job Form Fill",icon:"🏛️",cat:"jobs",badge:"hot"},
+  {name:"Private Job Form Fill",icon:"🏢",cat:"jobs"},
+  {name:"Railway Job Form",icon:"🚂",cat:"jobs",badge:"hot"},
+  {name:"SSC Job Form",icon:"📋",cat:"jobs"},
+  {name:"Police Job Form",icon:"👮",cat:"jobs"},
+  {name:"Army Job Form",icon:"🪖",cat:"jobs"},
+  {name:"Navy Job Form",icon:"⚓",cat:"jobs"},
+  {name:"Air Force Job Form",icon:"✈️",cat:"jobs"},
+  {name:"Banking Job Form",icon:"🏦",cat:"jobs"},
+  {name:"Teaching Job Form",icon:"👨‍🏫",cat:"jobs"},
+  // TRAVEL
+  {name:"Train Ticket Booking",icon:"🚂",cat:"travel",badge:"fast"},
+  {name:"Flight Ticket Booking",icon:"✈️",cat:"travel"},
+  {name:"Bus Ticket Booking",icon:"🚌",cat:"travel"},
+  {name:"Hotel Booking",icon:"🏨",cat:"travel"},
+  {name:"Passport Apply",icon:"🛂",cat:"travel"},
+  {name:"Passport Appointment",icon:"📅",cat:"travel"},
+  {name:"Passport Status Check",icon:"🔍",cat:"travel"},
+  {name:"Tatkal Ticket Booking",icon:"⚡",cat:"travel",badge:"fast"},
+  // DIGITAL
+  {name:"Online Form Filling",icon:"📝",cat:"digital"},
+  {name:"Document Scanning",icon:"📄",cat:"digital"},
+  {name:"Color Printout",icon:"🖨️",cat:"digital"},
+  {name:"Black & White Print",icon:"🖤",cat:"digital"},
+  {name:"Photo Print",icon:"🖼️",cat:"digital"},
+  {name:"Passport Size Photo",icon:"📸",cat:"digital"},
+  {name:"Lamination",icon:"🗂️",cat:"digital"},
+  {name:"Document Upload",icon:"📤",cat:"digital"},
+  {name:"Email Creation",icon:"📧",cat:"digital"},
+  {name:"Resume / CV Creation",icon:"📝",cat:"digital"},
+  {name:"Online Application Upload",icon:"💻",cat:"digital"},
+  // BUSINESS
+  {name:"GST Registration",icon:"🧾",cat:"business"},
+  {name:"GST Return Filing",icon:"📊",cat:"business"},
+  {name:"Shop License Apply",icon:"🏪",cat:"business"},
+  {name:"MSME Registration",icon:"🏭",cat:"business"},
+  {name:"Trade License Apply",icon:"🤝",cat:"business"},
+  {name:"Company Registration",icon:"🏢",cat:"business"},
+  // OTHER
+  {name:"DigiLocker Registration",icon:"🔐",cat:"other"},
+  {name:"DigiLocker Document Download",icon:"📥",cat:"other"},
+  {name:"eShram Card Apply",icon:"👷",cat:"other",badge:"free"},
+  {name:"eShram Card Download",icon:"📲",cat:"other"},
+  {name:"Labour Scheme Apply",icon:"🛠️",cat:"other"},
+  {name:"PM Awas Yojana Apply",icon:"🏠",cat:"other",badge:"free"},
+  {name:"PM Awas Status Check",icon:"🔍",cat:"other"},
+  {name:"Swachh Bharat Registration",icon:"🧹",cat:"other"},
+  {name:"Jan Dhan Account Opening",icon:"🏦",cat:"other"},
+  {name:"NPS Registration",icon:"💰",cat:"other"},
+  {name:"Atal Pension Yojana Apply",icon:"👴",cat:"other"},
+  {name:"Courier Booking",icon:"📦",cat:"other"},
+  {name:"Speed Post Booking",icon:"🚀",cat:"other"},
+  {name:"Ticket Cancellation",icon:"❌",cat:"other"},
+  {name:"Online Complaint Registration",icon:"📣",cat:"other"},
+  {name:"Cyber Complaint Apply",icon:"🔒",cat:"other"},
+  {name:"FIR Online Apply",icon:"🚨",cat:"other"},
+  {name:"Court Case Status Check",icon:"⚖️",cat:"other"},
+  {name:"Electricity New Connection",icon:"⚡",cat:"other"},
+  {name:"Water Connection Apply",icon:"💧",cat:"other"},
+  {name:"Gas Connection Apply",icon:"🔥",cat:"other"},
+  {name:"SIM Card KYC",icon:"📱",cat:"other"},
+  {name:"SIM Card Activation",icon:"📶",cat:"other"},
+  {name:"Mobile Number Port",icon:"🔄",cat:"other"},
+  {name:"Internet Connection Apply",icon:"🌐",cat:"other"},
+  {name:"WiFi Installation Request",icon:"📡",cat:"other"},
+  {name:"Data Entry Work",icon:"⌨️",cat:"other"},
+  {name:"Typing Work",icon:"🖊️",cat:"other"},
+  {name:"Graphic Design Service",icon:"🎨",cat:"other"},
+  {name:"Photo Editing Service",icon:"🖼️",cat:"other"},
+  {name:"Video Editing Service",icon:"🎬",cat:"other"},
+  {name:"Logo Design Service",icon:"✨",cat:"other"},
+];
+
+const BADGE_MAP = {pop:'bdg-pop',hot:'bdg-hot',new:'bdg-new',free:'bdg-free',imp:'bdg-imp',fast:'bdg-fast'};
+const BADGE_LBL = {pop:'Popular',hot:'Hot',new:'New',free:'Free',imp:'Important',fast:'Fast'};
+
+let allServices = [];
+let activeCat = 'all';
+let srchVal = '';
+
+// ── Load services (Firebase first, fallback to default) ──
+async function loadServices(){
+  const data = await fbGet('/services');
+  const fbSvcs = fbArr(data);
+  allServices = fbSvcs.length > 0 ? fbSvcs : DEFAULT_SERVICES;
+  renderGrid();
+}
+
+function renderGrid(){
+  const grid = document.getElementById('svcGrid');
+  const filtered = allServices.filter(s=>{
+    const catOk = activeCat==='all'||s.cat===activeCat;
+    const srchOk = !srchVal||s.name.toLowerCase().includes(srchVal.toLowerCase());
+    return catOk && srchOk;
+  });
+  if(!filtered.length){
+    grid.innerHTML='<div class="empty"><span class="ei">😔</span>कोई सेवा नहीं मिली। कृपया अलग नाम खोजें।</div>';
+    return;
+  }
+  grid.innerHTML = filtered.map(s=>{
+    const bc = BADGE_MAP[s.badge]||'';
+    const bl = BADGE_LBL[s.badge]||s.badge||'';
+    return `<div class="sc c-${s.cat}" onclick="openModal('${s.name.replace(/'/g,"\\'")}','${s.icon||'📄'}')">
+      ${bl?`<span class="bdg ${bc}">${bl}</span>`:''}
+      <div class="sc-ico">${s.icon||'📄'}</div>
+      <div class="sc-name">${s.name}</div>
+    </div>`;
+  }).join('');
+}
+
+function filterSvc(v){srchVal=v;renderGrid()}
+
+// Cat tabs
+document.getElementById('catWrap').addEventListener('click',e=>{
+  const btn=e.target.closest('.ct');
+  if(!btn)return;
+  document.querySelectorAll('.ct').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  activeCat=btn.dataset.cat;
+  renderGrid();
+});
+
+// ── MODAL ──
+function openModal(name,icon){
+  document.getElementById('mTitle').textContent=name;
+  document.getElementById('mIco').textContent=icon;
+  document.getElementById('mDesc').textContent=`"${name}" के लिए हमसे WhatsApp पर संपर्क करें। हम आपको पूरी जानकारी और मदद देंगे।`;
+  const msg=encodeURIComponent(`नमस्ते! मुझे "${name}" सेवा चाहिए। कृपया जानकारी दें।`);
+  document.getElementById('mWa').href=`https://wa.me/919471892125?text=${msg}`;
+  document.getElementById('modal').classList.add('open');
+}
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+
+// ── NAV ──
+function toggleNav(){document.getElementById('mobNav').classList.toggle('open')}
+
+// ── FORM ──
+async function submitForm(){
+  const name=document.getElementById('fn').value.trim();
+  const phone=document.getElementById('fp').value.trim();
+  const svc=document.getElementById('fs').value;
+  const msg=document.getElementById('fm').value.trim();
+  if(!name||!phone||!svc){showToast('⚠️ कृपया सभी आवश्यक फ़ील्ड भरें');return}
+  if(phone.length<10){showToast('⚠️ सही मोबाइल नंबर दर्ज करें');return}
+  const btn=document.getElementById('fsubBtn');
+  btn.disabled=true;btn.textContent='⏳ भेज रहे हैं...';
+  // Firebase save
+  await fbPost('/enquiries',{name,phone,service:svc,msg:msg||'',time:new Date().toISOString(),status:'new'});
+  // WhatsApp
+  const wa=`🙏 नमस्ते!\n\n*नाम:* ${name}\n*मोबाइल:* ${phone}\n*सेवा:* ${svc}\n*संदेश:* ${msg||'N/A'}\n\n_सुजीत साइबर कैफ़े_`;
+  window.open(`https://wa.me/919471892125?text=${encodeURIComponent(wa)}`,'_blank');
+  btn.disabled=false;btn.innerHTML='<i class="fas fa-paper-plane"></i> अनुरोध भेजें';
+  document.getElementById('fOk').style.display='block';
+  setTimeout(()=>document.getElementById('fOk').style.display='none',5000);
+  document.getElementById('fn').value='';
+  document.getElementById('fp').value='';
+  document.getElementById('fs').value='';
+  document.getElementById('fm').value='';
+}
+
+// ── TOAST ──
+function showToast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),3200);
+}
+
+// ── HERO COUNTERS ──
+function animNum(id,end,suf=''){
+  let n=0;const el=document.getElementById(id);
+  const t=setInterval(()=>{n+=Math.ceil(end/70);if(n>=end){el.textContent=end+suf;clearInterval(t)}else el.textContent=n+suf},28);
+}
+new IntersectionObserver(es=>{
+  if(es[0].isIntersecting){animNum('hc1',180,'+');animNum('hc2',10000,'+');animNum('hc3',5,'+');es[0].target._done=true}
+},{threshold:.3}).observe(document.querySelector('.hero'));
+
+// ── INIT ──
+loadServices();
+</script>
+</body>
+</html>
